@@ -16,12 +16,16 @@ public class AllTheHeroes {
     }
 
     public void addSuperHero(Hero hero) {
+
         if (!isHeroTypePresent(hero)) {
+
             for (int i = 0; i < listOfHeroes.length; i++) {
+
                 if (listOfHeroes[i] == null) {
+
                     listOfHeroes[i] = hero;
-                    return;
-                } else if (listOfHeroes[i] != null && i == listOfHeroes.length){
+                    break;
+                } else if (listOfHeroes[i] != null && i == (listOfHeroes.length - 1)){
                     System.out.println("Sorry no more place in this squad.");
                 }
             }
@@ -52,6 +56,7 @@ public class AllTheHeroes {
 
 
     public Hero[] getHeroes () {
+
         return listOfHeroes;
     }
 }

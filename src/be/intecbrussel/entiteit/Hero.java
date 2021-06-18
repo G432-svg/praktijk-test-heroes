@@ -15,6 +15,15 @@ public abstract class Hero {
     nodig heeft in de subklassen.
     Dit mag een simpele sysout zijn.
      */
+
     public abstract void useSuperPower();
 
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "age=" + age +
+                ", alias='" + alias + '\'' +
+                '}';
+    }
 }
